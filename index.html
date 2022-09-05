@@ -5,8 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miku Miku Yeah!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="container">
+        <div id="MIKU">MIKU</div>
+        <div id="form">
+            <div id="description">
+                Everybody loves Hatsune Miku!
+                <br>
+                It's your chance now to join the world's fastest growing Miku fan club!
+                <br>
+                Sign up now for unlimited access to community events and tour information!
+                <br>
+                <br>
+                <i>We have vegatable juice~</i>
+            </div>
+
+            <form action="" id="formData">
+                <p id="formTitle">Enter your information to get started! <br>(入力してください)</p>
+
+                <div class="splitInput">
+                    <div class="nameInfo">
+                        <p>
+                            <label for="lname">LAST NAME (姓)</label>
+                            <br>
+                            <input type="text" id="lname" name="last name" placeholder="Nakamura / 中村">
+                        </p>
+                        <p>
+                            <label for="lfuri">FURIGANA (フリガナ)</label>
+                            <br>
+                            <input type="text" id="lfuri" name="last furigana" placeholder="ナカムラ">
+                        </p>
+                    </div>
     
+                    <div class="nameInfo">
+                        <p>
+                            <label for="fname">FIRST NAME (名)</label>
+                            <br>
+                            <input type="text" id="fname" name="first name" placeholder="Sakura / 桜">
+                        </p>
+                        <p>
+                            <label for="ffuri">FURIGANA (フリガナ)</label>
+                            <br>
+                            <input type="text" id="ffuri" name="first furigana" placeholder="サクラ">
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    <label for="email">EMAIL (メール)</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="HotSakura@naninani.com">
+                </p>
+
+                <div class="splitInput">
+                    <p>
+                        <label for="pword">PASSWORD (パスワード)</label>
+                        <br>
+                        <input type="password" name="password" id="pword">
+                    </p>
+                    <p>
+                        <label for="pword">CONFIRM PASSWORD (確認)</label>
+                        <br>
+                        <input type="password" name="password" id="pword">
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>

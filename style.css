@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+i {
+    font-style: italic;
+}
+
+#container {
+    display: flex;
+    min-height: 1000px;
+    max-height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#MIKU {
+    background-image: url(mikumiku.png);
+    width: 600px;
+    min-height: 1000px;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+#description {
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+#formTitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#form {
+    padding-left: 20px;
+    display: flex;
+    background-color: peachpuff;
+    width: 100vw;
+    min-height: 1000px;
+    height: 100vh;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+#form label {
+    font-size: .8rem;
+}
+
+#formData {
+    width: 500px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.splitInput {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nameInfo {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.splitInput input[type=text] {
+    width: 100%;
+}
+.splitInput input[type=password] {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+.splitInput > p{
+    width: 45%;
+}
