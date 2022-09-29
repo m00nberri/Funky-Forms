@@ -46,22 +46,26 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input {
+    all: unset;
+  }
 
 i {
     font-style: italic;
 }
 
 #container {
+    background-image: url(mikumiku.png);
     display: flex;
     min-height: 1000px;
     max-height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 #MIKU {
-    background-image: url(mikumiku.png);
     width: 600px;
     min-height: 1000px;
     height: 100vh;
@@ -71,6 +75,9 @@ i {
 #description {
     margin-bottom: 50px;
     font-size: 2rem;
+    max-width: 40rem;
+    color: white;
+    font-weight: bold;
 }
 
 #formTitle {
@@ -81,21 +88,27 @@ i {
 #form {
     padding-left: 20px;
     display: flex;
-    background-color: peachpuff;
+
+    background: linear-gradient(100deg, rgba(22,49,255,0.4) 0%, rgba(176,23,255,1) 60%, rgb(255, 149, 149) 100%); 
     width: 100vw;
     min-height: 1000px;
     height: 100vh;
     justify-content: center;
     align-items: left;
     flex-direction: column;
+    
 }
 
 #form label {
-    font-size: .8rem;
+    font-size: 0.9rem;
 }
 
 #formData {
     width: 500px;
+    padding: 20px 25px 10px 20px;
+    background-color: rgba(26, 26, 26, 0.801);
+    border-radius: 10px;
+    color: white;
 }
 
 input {
@@ -128,3 +141,51 @@ input {
 .splitInput > p{
     width: 45%;
 }
+
+#submitSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+a {
+    color: rgb(255, 63, 95);
+}
+
+#formData input[type=button] {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid rgb(255, 63, 95) 2px;
+    background-color: rgba(22, 228, 255, 0.521);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+#formData input[type=button]:hover {
+    border: solid rgb(255, 63, 95) 2px;
+    background-color: rgba(22, 228, 255, 0.26);
+}
+
+#formData input[type=button]:active {
+    border: solid rgb(114, 28, 43) 2px;
+    background-color: rgba(22, 49, 255, 0);
+    color: rgb(255, 63, 95);
+}
+
+input[type=text],input[type=email],input[type=password] {
+    border-radius: 5px;
+    border: solid white 1px;
+    background-color: rgba(0, 0, 0, 0.288);
+    margin-top: 5px;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus {
+    border: solid rgb(22, 228, 255) 1px;
+}
+
+/*-------------------------- Validation
+
