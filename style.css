@@ -158,8 +158,8 @@ a {
     height: 40px;
     border-radius: 10px;
     border: solid rgb(255, 63, 95) 2px;
-    background-color: rgba(22, 228, 255, 0.521);
-    color: white;
+    background-color: rgba(22, 228, 255, 0.678);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-weight: bold;
     text-align: center;
@@ -167,7 +167,7 @@ a {
 
 #formData input[type=submit]:hover {
     border: solid rgb(255, 63, 95) 2px;
-    background-color: rgba(22, 228, 255, 0.26);
+    background-color: rgba(22, 228, 255, 0.301);
 }
 
 #formData input[type=submit]:active {
@@ -209,9 +209,13 @@ input:valid:focus {
     background-color: rgba(0, 0, 0, 0.61);
 }
 
-input:valid:not(:placeholder-shown):not(:focus) {
+input[type=text]:valid:not(:placeholder-shown):not(:focus),input[type=email]:valid:not(:placeholder-shown):not(:focus),input[type=password]:valid:not(:placeholder-shown):not(:focus) {
     color: rgba(22, 228, 255, 0.493);
     border: solid black 0px;
     background: rgb(0,0,0,1);
     background: linear-gradient(90deg, rgba(0,0,0,0.4) 98%, rgba(101,219,255,0.6) 100%); 
+}
+
+input:required:not(:placeholder-shown):not(:focus):invalid {
+    background: linear-gradient(90deg, rgba(0,0,0,0.4) 98%, rgb(255, 63, 95) 100%); 
 }
