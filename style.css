@@ -153,7 +153,7 @@ a {
     color: rgb(255, 63, 95);
 }
 
-#formData input[type=button] {
+#formData input[type=submit] {
     width: 150px;
     height: 40px;
     border-radius: 10px;
@@ -165,12 +165,12 @@ a {
     text-align: center;
 }
 
-#formData input[type=button]:hover {
+#formData input[type=submit]:hover {
     border: solid rgb(255, 63, 95) 2px;
     background-color: rgba(22, 228, 255, 0.26);
 }
 
-#formData input[type=button]:active {
+#formData input[type=submit]:active {
     border: solid rgb(114, 28, 43) 2px;
     background-color: rgba(22, 49, 255, 0);
     color: rgb(255, 63, 95);
@@ -178,14 +178,40 @@ a {
 
 input[type=text],input[type=email],input[type=password] {
     border-radius: 5px;
-    border: solid white 1px;
     background-color: rgba(0, 0, 0, 0.288);
     margin-top: 5px;
+}
+
+input[type=text]::placeholder,input[type=email]::placeholder,input[type=password]::placeholder {
+    color: white;
 }
 
 input[type=text]:focus,input[type=email]:focus,input[type=password]:focus {
     border: solid rgb(22, 228, 255) 1px;
 }
 
-/*-------------------------- Validation
+/*-------------------------- Validation*/
 
+label {
+    position: relative;
+}
+
+.required::before {
+    content: '*';
+    position: absolute;
+    color: rgb(255, 63, 95);
+    top: 0px;
+    right: -10px;
+}
+
+input:valid:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+input:valid:not(:placeholder-shown):not(:focus) {
+    color: rgba(22, 228, 255, 0.493);
+    border: solid black 0px;
+    background: rgb(0,0,0,1);
+    background: linear-gradient(90deg, rgba(0,0,0,0.4) 98%, rgba(101,219,255,0.6) 100%); 
+}

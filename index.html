@@ -45,38 +45,38 @@
     
                     <div class="nameInfo">
                         <p>
-                            <label for="fname">FIRST NAME (名)</label>
+                            <label for="fname" class="required">FIRST NAME (名)</label>
                             <br>
-                            <input type="text" id="fname" name="first name" placeholder="Sakura / 桜">
+                            <input required type="text" id="fname" name="first name" placeholder="Sakura / 桜">
                         </p>
                         <p>
-                            <label for="ffuri">FURIGANA (フリガナ)</label>
+                            <label for="ffuri" class="required">FURIGANA (フリガナ)</label>
                             <br>
-                            <input type="text" id="ffuri" name="first furigana" placeholder="サクラ">
+                            <input required type="text" id="ffuri" name="first furigana" placeholder="サクラ">
                         </p>
                     </div>
                 </div>
 
                 <p>
-                    <label for="email">EMAIL (メール)</label>
+                    <label for="email" class="required">EMAIL (メール)</label>
                     <br>
-                    <input type="email" name="email" id="email" placeholder="HotSakura@naninani.com">
+                    <input required type="email" name="email" id="email" placeholder="HotSakura@naninani.com">
                 </p>
 
                 <div class="splitInput">
                     <p>
-                        <label for="pword">PASSWORD (パスワード)</label>
+                        <label for="pword" class="required">PASSWORD (パスワード)</label>
                         <br>
-                        <input type="password" name="password" id="pword">
+                        <input required type="password" name="password" id="pword">
                     </p>
                     <p>
-                        <label for="pword">CONFIRM PASSWORD (確認)</label>
+                        <label for="pwordC" class="required">CONFIRM PASSWORD (確認)</label>
                         <br>
-                        <input type="password" name="password" id="pword">
+                        <input required type="password" name="password" id="pwordC">
                     </p>
                 </div>
                 <div id="submitSection">
-                    <input type="button" value="Create Account">
+                    <input type="submit" value="Create Account" >
                     <span>Already have an account? <a href="">Log In</a></span>
                 </div>
 
